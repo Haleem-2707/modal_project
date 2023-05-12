@@ -1,0 +1,144 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+body {
+    margin: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    position: relative;
+    line-height: 1.5;
+    color: rgb(26, 22, 22);
+    background: linear-gradient(to top left, rgb(0, 174, 255), rgb(8, 235, 8));
+
+}
+
+.header {
+    color: rgb(58, 6, 245);
+    font-size: 70px;
+    
+}
+
+.show-modal {
+    width: 15%;
+    color: rgb(0, 4, 12);
+    background-color: rgb(251, 253, 253);
+    height: 70px;
+    font-size: 30px;
+    font-family: poppins, sans-serif;
+    flex-direction: space-between;
+    border-radius: 15px;
+    border: 2px solid rgb(12, 12, 12) ;
+}
+
+.show-modal:hover {
+    background-color: rgb(61, 56, 56);
+    color: white;
+}
+
+
+
+/* ....CLASS TO MAKE MODAL WORK..... */
+
+.hidden {
+      
+    display: none;
+    /* margin-top: 300px;
+    height: 200px;
+    font-weight: 10px;
+    font-size: 20px; 
+    display: none;
+    */
+    
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    padding: 6rem;
+    border-radius: 5px;
+    box-shadow: 0 3rem 5rem rgb(8, 8, 8);
+    z-index: 10px;
+    background-color: white;
+    margin-top: 450px;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.modal h1 {
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.close-modal {
+    width: 40px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    margin-bottom: 100px;
+    margin-right: -700px;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 786px) {
+
+
+    .header {
+        color: rgb(58, 6, 245);
+        font-size: 50px;
+        
+    }
+    .show-modal {
+        width: 25%;
+        margin-top: 30px;
+    
+    }
+    
+    .show-modal:hover {
+        background-color: rgb(61, 56, 56);
+        color: white;
+    }
+
+    .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 55%;
+        padding: 6rem;
+        border-radius: 5px;
+        box-shadow: 0 3rem 5rem rgb(8, 8, 8);
+        z-index: 10px;
+        background-color: white;
+        margin-top: 430px;
+        font-size: 20px;
+        line-height: 30px;
+        height: 400px;
+    }
+
+
+    .close-modal {
+        width: 40px;
+        height: 50px;
+        color: white;
+        background-color: black;
+        
+        margin-right: -500px;
+        font-size: 50px;
+    }
+
+}
